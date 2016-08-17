@@ -32,19 +32,6 @@ body {
   min-width: 500px;
 }
 
-/*#left {
-  float: left;
-}
-#right {
-  float: right;
-}*/
-
-/*
-  Section styles
- */
-/*.card {
-  display: none;
-}*/
 
 .card__prompt {
   font-size: 1.1em;
@@ -114,11 +101,11 @@ body {
 
 }
 
-.btn--yellow {
+/*.btn--yellow {
   border-color: #FFD1AA;
   color: white;
   background-color: #F3C500;
-}
+}*/
 
 .btn--big {
   font-size: 28px;
@@ -154,4 +141,10 @@ body {
 }
 .show {
   display: block;
+}
+#player2Wins{
+  float: right;
+}
+#player1Wins {
+  float: left;
 }

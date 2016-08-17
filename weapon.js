@@ -1,39 +1,50 @@
 'use strict';
 // WEAPON PROTOTYPE CHAIN
+
 var Weapon = function (name) {
+    this.name = "Weapon";
     this.name = name;
     this.damage = 0;
+
+  //  this.toString = function() {
+  //   return this.name;
+  // }
 }
+
 
 var Spark = function () {
-    this.maxDamage = 8;
-    this.minDamage = 5;
+    this.name = "Spark";
+    this.damage = Math.floor(Math.random() * 3) + 5;
+
 }
 
-Spark.prototype = new Weapon("Spark");
+Spark.prototype = new Weapon();
 
 
 var Uxi = function () {
-    this.maxDamage = 9;
-    this.minDamage = 2;
+    this.name = "Uxi";
+    this.damage = Math.floor(Math.random() * 7) + 2;
+
 }
 
-Uxi.prototype = new Weapon("Uxi");
+Uxi.prototype = new Weapon();
 
  var Plier = function () {
-    this.maxDamage = 11;
-    this.minDamage = 5;
+    this.name = "Plier";
+    this.damage = Math.floor(Math.random() * 6) + 5;
+
 }
 
-Plier.prototype = new Weapon("Plier");
+Plier.prototype = new Weapon();
 
 
 var Scrappy = function () {
-this.maxDamage = 10;
-this.minDamage = 8;
+this.name = "Scrappy";
+this.damage = Math.floor(Math.random() * 2) + 5;
+
 }
 
-Scrappy.prototype = new Weapon("Scrappy");
+Scrappy.prototype = new Weapon();
 
 
 
