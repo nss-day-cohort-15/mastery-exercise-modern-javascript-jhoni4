@@ -3,10 +3,6 @@
 
   var Robot =function () {
     this.name = "Robot";
-    // this.type = "";
-    // this.maxHealth = 0;
-    // this.minHealth = 0;
-    // this.model = "";
     this.health = 0;
     // console.log("main", this.health)
    }

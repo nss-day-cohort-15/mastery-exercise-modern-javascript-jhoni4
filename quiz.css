@@ -143,8 +143,10 @@ body {
   display: block;
 }
 #player2Wins{
+  color: white;
   float: right;
 }
 #player1Wins {
+  color: white;
   float: left;
 }

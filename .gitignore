@@ -1,4 +1,7 @@
-bower_components
+**/.*
 node_modules
-lib
-MIT.LICENSE
+bower_components
+src/lib
+test
+tests
+lib/
