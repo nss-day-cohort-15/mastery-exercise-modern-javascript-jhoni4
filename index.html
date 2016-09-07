@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robot Battle dome</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="quiz.css">
+  <link href="https://fonts.googleapis.com/css?family=Geo|Revalia" rel="stylesheet">
+
+</head>
+<body>
+  <section id="header" >
+     <h1>DIE TRYING ROBOT GAME</h1>
+  </section>
+
+  <article id="game-container">
+
+    <section id="model-selection"  class="card" card="modelSelection">
+      <div>
+        <legend>Name your players:</legend>
+        player1:<input type="text" autofocus="true" id="player1-name">
+        <select id="dropDown1"></select><br/>
+        player2:<input type="text" autofocus="true" id="player2-name">
+        <select id="dropDown2"></select>
+      </div>
+      <div class="col-md-2 col-md-offset-4">
+         <a id="choose-weapon" class="btn next-screen btn--big"
+         href="#"
+         next="card--weapon">
+         <span class="btn__text">Choose Weapon</span>
+      </a>
+    </div>
+    </section>
+
+    <section id="weapon-selection" class="card hidden card--weapon" card="weaponSelection">
+      <div>
+        <legend>Choose your weapon:</legend>
+        player1 Weapon:<select id="dropDown3">
+        </select><br/>
+        player2 Weapon:<select id="dropDown4">
+          </select>
+        </div>
+      <div class="col-md-2 col-md-offset-4">
+        <a id="begin-game" class="btn next-screen btn--big"
+         href="#"
+         next="card--battleground">
+        <span class="btn__text">Begin The Battle</span>
+        </a>
+    </div>
+    </section>
+
+    <section id="battleground" class="card card--battleground hidden" card="battleground">
+      <div id="player1Div"></div>
+      <div id="player2Div"></div>
+
+      <div id="player1Wins" class="hidden">
+          <h1>PLAYER1 WON...</h1>
+      </div>
+
+      <div id="player2Wins" class="hidden">
+          <h1>PLAYER2 WON...</h1>
+      </div>
+
+      <div class="col-md-2 col-md-offset-4">
+        <a id="attack" class="btn next-screen btn--big"
+           href="#">
+          <span class="btn__text">ATTACK</span>
+        </a>
+      </div>
+    </section>
+  </article>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="loader.js"></script>
+  <script type="text/javascript" src="robot.js"></script>
+  <script type="text/javascript" src="weapon.js"></script>
+  <script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+  /*font-family: "Lato", "Helvetica", "sans-serif";*/
+  margin: 0;
+  padding: 10px;
+  font-size: 3em;
+  font-family: 'Revalia', cursive, "sans-serif";
+  text-shadow: 2px 2px #000;
+
+}
+#header {
+  background-color: #4C4445;
+  text-align: center;
+  color: #FFD1AA;
+  box-shadow: 10px 10px;
+
+}
+
+#game-container {
+  background: url("/img/background.jpg") no-repeat;
+  background-size: 100%;
+  min-height: 650px;
+}
+
+.field {
+  margin: 20px 0 0 0;
+}
+
+.field__textinput {
+  font-size: 1em;
+  padding: 15px 0;
+  text-align: center;
+  min-width: 500px;
+}
+
+
+.card__prompt {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.card__button {
+  font-size: 1.1em;
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+
+/*
+  Button styles
+ */
+
+.btn {
+  text-decoration: none;
+  background-color: #91A437;
+  color: #111;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 5px;
+  min-width: 260px;
+  box-shadow: 5px 5px #000;
+
+
+}
+
+.btn--orange {
+  border-color: #FFD1AA;
+  color: white;
+  background-color: #4C4445;
+  border-style: outset;
+
+}
+.head__btn {
+  border-color: #FFD1AA;
+  font-weight: 400;
+  color: #FFD1AA;
+  font-size: 20px;
+  background-color: #4C4445;
+  margin: 10px;
+  padding: 10px 5px;
+  min-width: 260px;
+  display: block;
+  text-align: center;
+  border-radius:  40px;
+  box-shadow: 5px 5px black
+
+}
+.btn--blue {
+  background-color: #4C4445;
+  color: yellow;
+  background-color: #AA8E39;
+  border-style: outset;
+  box-shadow: 5px 5px #000;
+
+
+}
+
+/*.btn--yellow {
+  border-color: #FFD1AA;
+  color: white;
+  background-color: #F3C500;
+}*/
+
+.btn--big {
+  font-size: 28px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.btn--small {
+  min-width: 50px;
+}
+
+.btn__prompt {
+  background-color: white;
+  color: #fff;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: -10px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #333;
+  opacity: .4;
+  border-radius: 5px 0 0 5px;
+  left: 37px;
+  float: left;
+}
+
+.btn__text {
+  padding: 0 50px 0 20px;
+  border-radius: 0 5px 5px 0;
+}
+.Hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+#player2Wins{
+  color: white;
+  float: right;
+}
+#player1Wins {
+  color: white;
+  float: left;
+}
+#player2Div {
+  float: right;
+}
+#player1Div {
+  float: left;
+}
