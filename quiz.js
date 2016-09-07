@@ -74,11 +74,12 @@ $(document).ready(function() {
     case "card--battleground":
 
     $("#attack").on("click", function(e) {
-
-        if (player2.health <= 0 && player1.health > 0) {
+        player1.health -= player2.weapon.damage;
+        player2.health -= player1.weapon.damage;
+        if (player2.health <= 0) {
           $("#player1Wins").show();
           $("#player1Wins").toggleClass("hidden");
-        } else if (player1.health <= 0 && player2.health > 0) {
+        } else if (player1.health <= 0) {
             $("#player2Wins").show();
             $("#player2Wins").toggleClass("hidden");
         } else {
