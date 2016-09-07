@@ -5,3 +5,4 @@ src/lib
 test
 tests
 lib/
+.DS_Store

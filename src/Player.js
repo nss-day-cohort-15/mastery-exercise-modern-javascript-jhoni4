@@ -1,7 +1,7 @@
 function Player() {
 }
-Player.prototype.play = function(song) {
-  this.currentlyPlayingSong = song;
+Player.prototype.play = function(game) {
+  this.currentlyPlayingGame = game;
   this.isPlaying = true;
 };
 
@@ -11,12 +11,12 @@ Player.prototype.pause = function() {
 
 Player.prototype.resume = function() {
   if (this.isPlaying) {
-    throw new Error("song is already playing");
+    throw new Error("game is already playing");
   }
 
   this.isPlaying = true;
 };
 
 Player.prototype.makeFavorite = function() {
-  this.currentlyPlayingSong.persistFavoriteStatus(true);
+  this.currentlyPlayingGame.persistFavoriteStatus(true);
 };

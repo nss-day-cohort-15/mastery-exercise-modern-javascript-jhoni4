@@ -150,3 +150,9 @@ body {
   color: white;
   float: left;
 }
+#player2Div {
+  float: right;
+}
+#player1Div {
+  float: left;
+}
